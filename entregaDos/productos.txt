@@ -1,0 +1,15 @@
+[
+    {
+        "titulo":"regla",
+        "precio" : 160,
+        "descripcion": "regla para medir",
+        "id": 1
+    }
+    {
+        "titulo":"escuadra",
+        "precio" : 180,
+        "descripcion": "regla para medir triangular",
+        "id": 2
+    }
+        
+        ]
