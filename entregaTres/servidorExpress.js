@@ -7,8 +7,9 @@ app.get("/productos", async (req, res) => {
 });
 
 app.get("/productosRandom", async (req, res) => {
-	const l = contenedor.getAll();
-	res.send(await contenedor.getById(Math.round(Math.random() * l.length)));
+	const listaDeProductos = await contenedor.getAll();
+	const numeroRandom = parseInt(Math.random() * listaDeProductos.length);
+	res.send(listaDeProductos[numeroRandom]);
 });
 
 app.listen(8080, () => {
