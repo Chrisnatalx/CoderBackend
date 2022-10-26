@@ -1,18 +1,16 @@
-[{
-    "title": "Escuadra",
-    "price": 123.45,
-    "thumbnail" : "imagenUno",
-    "id": 1
-},
-{   "title": "Calculadora",
+[
+    
+  {
+    "title": "Calculadora",
     "price": 234.56,
-    "thumbnail" : "imagenDos",
-    "id": 2
-},
-{
+    "thumbnail": "imagenUno",
+    "id": 1
+  },
+  {
     "title": "Globo Terraqueo",
     "price": 345.67,
-    "thumbnail" : "imagenTres",
-    "id": 3
-}
+    "thumbnail": "imagenDos",
+    "id": 2
+  }
+  
 ]

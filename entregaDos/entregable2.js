@@ -75,10 +75,10 @@ const producto2 = {
 	descripcion: "algo distinto",
 };
 
-contenedor.getAll();
-contenedor.getById(1);
-contenedor.deleteById(1);
-contenedor.deleteAll();
-contenedor.save();
+// contenedor.getAll();
+// contenedor.getById(1);
+// contenedor.deleteById(1);
+// contenedor.deleteAll();
+// contenedor.save();
 
 module.exports = Contenedor;
