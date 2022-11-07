@@ -46,11 +46,13 @@ class ProductContenedor {
 		const productIndex = this.products.findIndex(
 			(item) => item.id == parseInt(id)
 		);
-		if (!id) {
-			console.log({ error: "Producto no encontrado" });
-		} else {
-			this.products.splice(productIndex, 1, { id: parseInt(id), ...product });
+		if (productIndex == -1) {
+			return { error: "Producto no encontrado" };
 		}
+		return this.products.splice(productIndex, 1, {
+			id: parseInt(id),
+			...product,
+		});
 	}
 }
 

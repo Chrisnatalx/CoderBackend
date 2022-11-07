@@ -29,9 +29,7 @@ productRouter.post("/", (req, res) => {
 	});
 });
 productRouter.put("/:id", (req, res) => {
-	productoContenedor.update(req.params.id, req.body);
-	console.log("crear producto" + req.params.id, req.body);
-	res.json({ message: "producto actualizado" });
+	res.json(productoContenedor.update(req.params.id, req.body));
 });
 productRouter.delete("/:id", (req, res) => {
 	res.json(productoContenedor.deleteById(req.params.id));
