@@ -25,7 +25,7 @@ productRouter.post("/", (req, res) => {
 	const productId = productoContenedor.save(req.body);
 	res.json({
 		...req.body,
-		id: productId.id,
+		id: productId,
 	});
 });
 productRouter.put("/:id", (req, res) => {
