@@ -1,17 +1,3 @@
-const products = [
-	{
-		id: 1,
-		title: "Pizza",
-		price: 100,
-		thumbnaul: "pizza.jpg",
-	},
-	{
-		id: 2,
-		title: "Ensalada",
-		price: 80,
-		thumbnaul: "ensalada.jpg",
-	},
-];
 class ProductContenedor {
 	constructor() {
 		this.products = [];
@@ -47,11 +33,10 @@ class ProductContenedor {
 		const productIndex = this.products.findIndex(
 			(item) => item.id == parseInt(id)
 		);
-		if (!id) {
-		} else {
-			this.products.splice(productIndex, 1);
+		if (productIndex == -1) {
+			return { error: "Producto no encontrado" };
 		}
-		return;
+		return this.products.splice(productIndex, 1);
 	}
 	deleteAll() {
 		this.products = [];

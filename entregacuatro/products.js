@@ -34,9 +34,7 @@ productRouter.put("/:id", (req, res) => {
 	res.json({ message: "producto actualizado" });
 });
 productRouter.delete("/:id", (req, res) => {
-	productoContenedor.deleteById(req.params.id);
-	console.log("borrar un producto" + req.params.id);
-	res.json({ message: "producto eliminado" });
+	res.json(productoContenedor.deleteById(req.params.id));
 });
 
 module.exports = productRouter;
